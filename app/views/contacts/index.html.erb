@@ -4,7 +4,9 @@
 
 <ul>
 <% for contact in contacts %>
-<li><%= contact ["first_name"] %> <%= contact ["last_name"] %>, <%= contact ["email"] %>, 
-<%= contact ["phone_number"] %>, <%= contact ["company_id"] %>
+<li><%= contact ["first_name"] %> <%= contact ["last_name"] %>
+<% company = Company.find_by({"id" => contact[company_id]}) %>
+, <%= contact ["email"] %>, 
+<%= contact ["phone_number"] %>
 <% end %>
 </ul>
