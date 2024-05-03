@@ -1,1 +1,9 @@
-<h1>Companies</h1>
+<h1 style="background-color:lightblue; text-align:center;">Companies</h1>
+
+<% companies = Company.all %>
+
+<ul>
+<% for company in companies %>
+<li><%= company ["name"] %></li>
+<% end %>
+</ul>
