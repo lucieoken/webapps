@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get("/dice", :controller => "dice", :action => "index")
   # resources "companies" is the equivalent to the below 
   get("/companies", :controller => "companies", :action => "index")
+  get("/contacts", :controller => "contacts", :action => "index")
 end

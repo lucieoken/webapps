@@ -1,0 +1,10 @@
+<h1 style="background-color:lightblue; text-align:center;">Contacts</h1>
+
+<% contacts = Contact.all %>
+
+<ul>
+<% for contact in contacts %>
+<li><%= contact ["first_name"] %> <%= contact ["last_name"] %>, <%= contact ["email"] %>, 
+<%= contact ["phone_number"] %>, <%= contact ["company_id"] %>
+<% end %>
+</ul>
